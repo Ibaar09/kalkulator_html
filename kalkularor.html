@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+</head>
+<body>
+
+	<form>
+		<fieldset>
+			<legend>Calculator</legend>
+			<label for="angka1">Masukan Angka Pertama:</label>
+			<input type="text" id="angka1"><br><br><br>
+			<label for="angka2">Masukan Angka Kedua:</label>
+			<input type="text" id="angka2"><br><br><br>
+			<button onclick="hitung()">Hitung</button>
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+	  function hitung(){	
+		var bilangan1= parseInt (document.getElementById("angka1").value); 
+		var bilangan2=parseInt (document.getElementById("angka2").value); 
+
+		var tambah=bilangan1 + bilangan2;
+		var kurangi=bilangan1 - bilangan2;
+        var kali=bilangan1*bilangan2; 
+        var bagi=bilangan1/bilangan2;
+        var modulus=bilangan1%bilangan2; 
+
+
+        document.write("<h1>Aplikasi Calculator</h1>");
+        document.write("<p><b>Bilangan1 + Bilangan2</b></p>");
+        document.write( bilangan1 + "+" +  bilangan2 +"<br>" +"=");
+		document.write(tambah + "<br>");
+		 document.write("<p><b>Bilangan1 - Bilangan2</b></p>");
+        document.write(bilangan1 + "-" + bilangan2 +"<br>") + "=";
+		document.write(kurangi + "<br>");
+		 document.write("<p><b>Bilangan1 * Bilangan2</b></p>");
+		 document.write(bilangan1 + "*" + bilangan2 +"<br>" + "=");
+		document.write(kali  + "<br>");
+		 document.write("<p><b>Bilangan1 / Bilangan2</b></p>");
+		 document.write(bilangan1 + "/" + bilangan2 +"<br>" + "=");
+		document.write(bagi  + "<br>");
+		 document.write("<p><b>Bilangan1 % Bilangan2</b></p>");
+		 document.write(bilangan1 + "%" + bilangan2 +"<br>" + "=");
+		document.write(modulus + "<br>");
+	}
+	</script>
+</body>
+</html>
